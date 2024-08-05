@@ -50,6 +50,11 @@ class Star:
         self.star = self.createStar()
         self.draw(self.win)
 
+    def setLocation(self, x, y):
+        self.x = x
+        self.y = y
+        self.star = self.createStar()
+
     def twinkle(self):
         biggest = self.scale
         smallest = self.scale/2

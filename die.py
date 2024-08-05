@@ -19,6 +19,8 @@ class Die:
         
         self.isHighlighted = isHighlighted
 
+        self.borderWidth = 3
+
         r = self.size/2
         self.xMin = self.x - r
         self.xMax = self.x + r
@@ -28,6 +30,13 @@ class Die:
         self.body = self.createBody()
         self.dots = self.createDots()
         self.highlight = self.createHighlight()
+
+
+
+
+    def isClicked(self, click):
+        return self.xMin < click.getX() < self.xMax and \
+            self.yMin < click.getY() < self.yMax
 
 
 
@@ -81,6 +90,10 @@ class Die:
         self.highlightColor = color
         self.highlight = self.createHighlight()
 
+    def setBorderWidth(self, newWidth):
+        self.borderWidth = newWidth
+        self.body = self.createBody()
+
     def toggleHighlight(self):
         if self.isHighlighted:
             self.highlight.undraw()
@@ -99,7 +112,7 @@ class Die:
         r = self.size/2
         body = Rectangle(Point(self.x - r, self.y - r), 
                          Point(self.x + r, self.y + r))
-        body.setWidth(3)
+        body.setWidth(self.borderWidth)
         body.setFill(self.dieColor)
         return body
 
