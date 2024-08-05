@@ -9,16 +9,16 @@ Whenever you roll zero points, your turn is over and you don't add anything to y
 Eventually, you will be able to keep your score and add it to the game total; 
 however, your first recorded score must be at least 300 points.
 
-Whenever you roll three or more of the same number, you are awarded a point total for the roll of the number on the die x 100.
-For example, three 5's would score 500 points.
+Whenever you roll three or more of the same number, you are awarded a point total for the roll of the number on the die x100.
+For example, three 5's would score 500 points. As an exception, three 1's score 1000.
 Additionally, that number will now count for 100 points for the remainder of your turn whenever it is rolled and kept.
-If you roll four or more of the same number, it counts as the triple point value plus 100 for each additional dice of that number.
-For example, five 5's would score 500 + 100 + 100 = 700 points.
+If you roll four or more of the same number, it counts as the triple point value +100 for each additional dice of that number.
+For example, five 4's would score 400 + 100 + 100 = 600 points.
 
 You may choose to roll again or keep your score after each and every roll 
 (provided you have already scored 300 points and have not lost your turn).
 You may choose not to keep all of the dice that it is possible to keep.
-You only need to keep one to roll again.
+You only need to keep at least one die to roll again.
 If you have rolled all five dice and have not lost your turn, you may choose to roll all five again.
 
 First to reach 5000 points wins.
